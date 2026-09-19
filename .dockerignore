@@ -1,0 +1,12 @@
+.git
+.github
+.env
+**/.env
+**/.venv
+**/node_modules
+**/dist
+**/__pycache__
+**/.pytest_cache
+backend/data/*.json
+study-rhythm-coach
+*.tar.gz

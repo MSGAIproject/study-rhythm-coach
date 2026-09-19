@@ -1,0 +1,24 @@
+:root {
+  --app-background: #202124;
+  --app-surface: #292B2F;
+  --app-text: #E8EAED;
+  --app-accent: #8AB4F8;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Apple SD Gothic Neo", "Noto Sans KR", system-ui, sans-serif;
+  color: var(--app-text);
+  background: var(--app-background);
+  font-synthesis: none;
+  font-size: 18px;
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; color: var(--app-text); background: var(--app-background); }
+button, input, select, textarea { font: inherit; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+button { touch-action: manipulation; }
+button:disabled { opacity: .45; cursor: default; }
+:focus-visible { outline: 3px solid var(--app-accent); outline-offset: 3px; }
+input[type="checkbox"] { accent-color: var(--app-accent); }
+#root { min-height: 100vh; }
+::selection { color: var(--app-background); background: var(--app-accent); }

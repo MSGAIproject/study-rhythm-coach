@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: study-rhythm-coach
+    runtime: docker
+    plan: 0.5c-512mb
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    autoDeployTrigger: commit
+    numInstances: 1
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: REQUIRE_CLIENT_ID
+        value: "1"
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-3.5-flash
+      - key: YES24_API_KEY
+        sync: false
+    disk:
+      name: study-data
+      mountPath: /var/data
+      sizeGB: 1

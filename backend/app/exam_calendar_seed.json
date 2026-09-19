@@ -1,0 +1,412 @@
+{
+  "year": 2026,
+  "exams": [
+    {
+      "id": "2024-g1-03",
+      "year": 2024,
+      "grade": 1,
+      "date": "2024-03-28",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g1-06",
+      "year": 2024,
+      "grade": 1,
+      "date": "2024-06-04",
+      "name": "6월 전국연합학력평가",
+      "organizer": "부산광역시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g1-09",
+      "year": 2024,
+      "grade": 1,
+      "date": "2024-09-04",
+      "name": "9월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g1-10",
+      "year": 2024,
+      "grade": 1,
+      "date": "2024-10-15",
+      "name": "10월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g2-03",
+      "year": 2024,
+      "grade": 2,
+      "date": "2024-03-28",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g2-06",
+      "year": 2024,
+      "grade": 2,
+      "date": "2024-06-04",
+      "name": "6월 전국연합학력평가",
+      "organizer": "부산광역시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g2-09",
+      "year": 2024,
+      "grade": 2,
+      "date": "2024-09-04",
+      "name": "9월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g2-10",
+      "year": 2024,
+      "grade": 2,
+      "date": "2024-10-15",
+      "name": "10월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-03",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-03-28",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-05",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-05-08",
+      "name": "5월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-06",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-06-04",
+      "name": "6월 모의평가",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-07",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-07-11",
+      "name": "7월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-09",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-09-04",
+      "name": "9월 모의평가",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-10",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-10-15",
+      "name": "10월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2024-g3-11",
+      "year": 2024,
+      "grade": 3,
+      "date": "2024-11-14",
+      "name": "11월 수능",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://school.jbedu.kr/scje/M010401/view/6004015"
+    },
+    {
+      "id": "2025-g1-03",
+      "year": 2025,
+      "grade": 1,
+      "date": "2025-03-26",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g1-06",
+      "year": 2025,
+      "grade": 1,
+      "date": "2025-06-04",
+      "name": "6월 전국연합학력평가",
+      "organizer": "부산광역시교육청",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941577"
+    },
+    {
+      "id": "2025-g1-09",
+      "year": 2025,
+      "grade": 1,
+      "date": "2025-09-03",
+      "name": "9월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g1-10",
+      "year": 2025,
+      "grade": 1,
+      "date": "2025-10-14",
+      "name": "10월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g2-03",
+      "year": 2025,
+      "grade": 2,
+      "date": "2025-03-26",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g2-06",
+      "year": 2025,
+      "grade": 2,
+      "date": "2025-06-04",
+      "name": "6월 전국연합학력평가",
+      "organizer": "부산광역시교육청",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941577"
+    },
+    {
+      "id": "2025-g2-09",
+      "year": 2025,
+      "grade": 2,
+      "date": "2025-09-03",
+      "name": "9월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g2-10",
+      "year": 2025,
+      "grade": 2,
+      "date": "2025-10-14",
+      "name": "10월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g3-03",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-03-26",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g3-05",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-05-08",
+      "name": "5월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g3-06",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-06-04",
+      "name": "6월 모의평가",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://www.korea.kr/news/policyNewsView.do?newsId=148941577"
+    },
+    {
+      "id": "2025-g3-07",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-07-10",
+      "name": "7월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g3-09",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-09-03",
+      "name": "9월 모의평가",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g3-10",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-10-14",
+      "name": "10월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2025-g3-11",
+      "year": 2025,
+      "grade": 3,
+      "date": "2025-11-13",
+      "name": "11월 수능",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://bch-h.goebc.kr/upload/bch-h/na/bbs_1308/2025/03/CFC956F0-2AC2-8609-5ADA-B388F5BABBB1.pdf"
+    },
+    {
+      "id": "2026-g1-03",
+      "year": 2026,
+      "grade": 1,
+      "date": "2026-03-24",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g1-06",
+      "year": 2026,
+      "grade": 1,
+      "date": "2026-06-04",
+      "name": "6월 전국연합학력평가",
+      "organizer": "부산광역시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g1-09",
+      "year": 2026,
+      "grade": 1,
+      "date": "2026-09-02",
+      "name": "9월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g1-10",
+      "year": 2026,
+      "grade": 1,
+      "date": "2026-10-20",
+      "name": "10월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g2-03",
+      "year": 2026,
+      "grade": 2,
+      "date": "2026-03-24",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g2-06",
+      "year": 2026,
+      "grade": 2,
+      "date": "2026-06-04",
+      "name": "6월 전국연합학력평가",
+      "organizer": "부산광역시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g2-09",
+      "year": 2026,
+      "grade": 2,
+      "date": "2026-09-02",
+      "name": "9월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g2-10",
+      "year": 2026,
+      "grade": 2,
+      "date": "2026-10-20",
+      "name": "10월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-03",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-03-24",
+      "name": "3월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-05",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-05-07",
+      "name": "5월 전국연합학력평가",
+      "organizer": "경기도교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-06",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-06-04",
+      "name": "6월 모의평가",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-07",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-07-08",
+      "name": "7월 전국연합학력평가",
+      "organizer": "인천광역시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-09",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-09-02",
+      "name": "9월 모의평가",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-10",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-10-20",
+      "name": "10월 전국연합학력평가",
+      "organizer": "서울특별시교육청",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    },
+    {
+      "id": "2026-g3-11",
+      "year": 2026,
+      "grade": 3,
+      "date": "2026-11-19",
+      "name": "11월 수능",
+      "organizer": "한국교육과정평가원",
+      "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+    }
+  ],
+  "checked_at": "2026-09-13T08:32:40.631785+00:00",
+  "source_url": "https://cloud.ebsi.co.kr/ebs/xip/xipa/retrieveExmSchedRngNext.ebs?tab=1&targetCd=D300"
+}

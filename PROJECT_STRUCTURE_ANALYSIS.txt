@@ -1,0 +1,283 @@
+오름 프로젝트 디렉터리 및 파일 구조 분석
+==========================================
+
+분석 기준 경로
+--------------
+/home/pi/Documents/projects/study-rhythm-coach
+
+프로젝트 개요
+-------------
+현재 프로젝트는 React 프론트엔드, FastAPI 백엔드, JSON 파일 저장소로 구성되어 있다.
+
+
+1. 전체 구조
+------------
+
+study-rhythm-coach/
+├── frontend/                  React 19 + Vite 화면
+│   ├── src/                   실제 프론트엔드 코드
+│   ├── tests/                 Node 기반 단위 테스트
+│   ├── public/                자세 인식 모델과 WASM
+│   ├── node_modules/          설치된 패키지
+│   └── dist/                  빌드 결과
+│
+├── backend/                   FastAPI 서버
+│   ├── app/                   API와 비즈니스 로직
+│   ├── data/                  사용자 데이터를 JSON으로 저장
+│   ├── tests/                 pytest 테스트
+│   └── .venv/                 Python 가상환경
+│
+├── study-rhythm-coach/        2026년 9월 4일 시점의 오래된 중첩 복사본
+├── start.sh                   백엔드와 프론트엔드 동시 실행
+├── setup.sh                   최초 환경 구축
+├── setup_korean.sh            라즈베리파이 한글 입력 설정
+├── package_project.sh         프로젝트 압축
+├── README.md                  현재 사용법과 기능 설명
+├── NEXT_SESSION.md            작업 인수인계
+├── .env                       API 설정
+└── .env.example               환경변수 예제
+
+현재 실제 실행 대상은 바깥쪽 frontend/와 backend/다.
+안쪽의 study-rhythm-coach/는 파일 수정일이 2026년 9월 4일에 멈춰 있어
+오래된 백업 또는 잘못 중첩된 압축 해제본으로 보인다.
+
+
+2. 프론트엔드 구조
+------------------
+
+중심 파일은 frontend/src/App.jsx다.
+전역 상태, API 요청, 탭 전환, 카메라 및 집중 세션을 대부분 관리한다.
+
+frontend/src/App.jsx
+  앱 전체 상태와 홈, 집중 화면, 공부 관리, AI 코치, 기본 설정 탭 관리
+
+frontend/src/App.css
+  전체 화면 스타일
+
+frontend/src/Onboarding.jsx
+  최초 기본 질문과 프로필 저장
+
+frontend/src/StudyHabits.jsx
+  이번 주 학습 습관과 오늘 목표 체크
+
+frontend/src/StudyTimetable.jsx
+  날짜별 시간표 추가, 수정, 완료 처리
+
+frontend/src/StudyTimeChart.jsx
+  공부 타이머와 일간, 주간, 월간 통계
+
+frontend/src/StudyCoach.jsx
+  AI 조언과 7일 학습 계획
+
+frontend/src/ExamProgress.jsx
+  시험 일정, 성적, 목표 점수
+
+frontend/src/FocusView.jsx
+  집중 학습 전용 화면
+
+frontend/src/TaskBookPicker.jsx
+  교재 검색과 선택
+
+frontend/src/taskAllocation.js
+  작업을 날짜별 시간과 페이지로 나누는 로직
+
+frontend/src/dailyProgress.js
+  홈의 오늘 학습 목표 진도율 계산
+
+frontend/src/studyTime.js
+  시간 집계와 날짜 이동 계산
+
+frontend/src/poseSkeleton.js
+  MediaPipe와 OpenCV를 이용한 자세 인식
+
+frontend/src/drowsiness.js
+  자세 변화 기반 졸음 의심 판단
+
+frontend/src/wakeQuiz.js
+  졸음 감지 후 기상 문제 생성
+
+프론트엔드는 /api 요청을 Vite 개발 서버가 다음 백엔드로 전달한다.
+
+http://127.0.0.1:8100
+
+관련 설정 파일은 frontend/vite.config.js다.
+
+
+3. 브라우저에만 저장되는 데이터
+------------------------------
+
+다음 데이터는 백엔드 JSON이 아니라 브라우저 localStorage에 저장된다.
+
+- 오늘 목표 체크 상태
+- 실행 중인 타이머 상태
+- 사용자가 직접 추가한 타이머 과목
+
+따라서 다른 브라우저나 다른 기기로 접속하면 체크 상태가 공유되지 않는다.
+
+
+4. 백엔드 구조
+---------------
+
+중심 진입점은 backend/app/main.py다.
+각 기능별 라우터를 불러와 하나의 FastAPI 앱으로 구성한다.
+
+backend/app/main.py
+  FastAPI 앱과 프로필, 작업, 계획 API
+
+backend/app/models.py
+  프로필, 작업, 계획 데이터 검증 모델
+
+backend/app/store.py
+  프로필과 작업 JSON 읽기 및 쓰기
+
+backend/app/scheduler.py
+  공부 가능 시간에 작업 자동 배치
+
+backend/app/task_allocation.py
+  날짜별 시간과 페이지 분배
+
+backend/app/timetable.py
+  날짜별 시간표 저장과 시간 충돌 검증
+
+backend/app/study_time.py
+  실제 공부 세션 기록
+
+backend/app/coach.py
+  AI 조언, 계획 생성 및 수락
+
+backend/app/books.py
+  YES24 교재 검색
+
+backend/app/exams.py
+  시험 일정과 성적 관리
+
+backend/app/admissions.py
+  대학과 학과 입시 결과 검색
+
+
+5. 주요 API
+-----------
+
+/api/profile
+  사용자 프로필
+
+/api/tasks
+  공부 작업
+
+/api/plans/generate
+  규칙 기반 일일 계획
+
+/api/coach/*
+  AI 조언 및 7일 계획
+
+/api/timetable/{날짜}
+  날짜별 시간표
+
+/api/study-sessions
+  타이머 공부 기록
+
+/api/exams/*
+  시험 일정과 성적
+
+/api/books/*
+  교재 검색
+
+/api/admissions/search
+  입시 정보 검색
+
+
+6. 데이터 저장 구조
+-------------------
+
+별도 데이터베이스는 없고 backend/data/ 아래 JSON 파일을 사용한다.
+
+backend/data/
+├── profile.json                 기본 설정과 목표
+├── tasks.json                   공부 관리 작업
+├── accepted-coach-plan.json     수락한 AI 학습 계획
+├── study-sessions.json          타이머 공부 기록
+├── exam-calendar.json           시험 일정
+├── exam-results.json            시험 성적
+└── timetable-YYYY-MM-DD.json    날짜별 시간표
+
+파일 저장 시 임시 .tmp 파일을 만든 뒤 교체하는 방식이다.
+이 방식은 저장 도중 파일이 일부만 기록될 가능성을 줄인다.
+
+현재 사용자별 구분이나 여러 사용자의 동시 접속을 처리하는 기능은 없다.
+
+
+7. 화면과 데이터의 흐름
+-----------------------
+
+공부 관리 작업
+  → taskAllocation.js에서 날짜별 분배
+  → 수락한 AI 계획과 병합
+  → 날짜별 시간표와 병합
+  → StudyHabits의 오늘 목표에 표시
+
+StudyHabits의 체크
+  → 브라우저 localStorage에 저장
+
+App의 오늘 학습 목표 진도율
+  → dailyProgress.js에서 별도로 계산
+
+
+8. 현재 진도율 계산 문제의 구조적 원인
+--------------------------------------
+
+StudyHabits는 다음 항목을 합친 목록을 보여준다.
+
+- 공부 관리 작업
+- 수락한 AI 계획
+- 날짜별 시간표
+
+하지만 dailyProgress.js는 기본 공부 관리 작업만 기준으로 계산한다.
+
+즉 화면에 보이는 오늘 목표 목록과 상단 진도율이 서로 다른 데이터를 기준으로 한다.
+이 때문에 오늘 목표가 여러 개 보이더라도 한 항목만 체크했을 때 100%가 될 수 있다.
+
+정확히 해결하려면 오늘 목표 목록을 한 곳에서 생성하고,
+StudyHabits와 상단 진도율이 동일한 결과를 함께 사용하도록 구조를 통합해야 한다.
+
+
+9. 테스트와 자동 생성 폴더
+-------------------------
+
+frontend/tests/
+  프론트엔드 단위 테스트
+
+backend/tests/
+  백엔드 pytest 테스트
+
+frontend/node_modules/
+  프론트엔드 설치 패키지
+
+frontend/dist/
+  프론트엔드 빌드 결과
+
+backend/.venv/
+  Python 가상환경
+
+__pycache__/
+  Python 실행 캐시
+
+자동 생성 폴더는 소스 코드가 아니며 설치 또는 빌드로 다시 만들 수 있다.
+
+
+10. 현재 구조에서 눈에 띄는 점
+-------------------------------
+
+1) 프로젝트 안에 오래된 study-rhythm-coach/ 복사본이 중첩되어 있다.
+   잘못된 복사본을 수정할 가능성이 있다.
+
+2) 현재 프로젝트 자체에는 .git 저장소가 없다.
+   변경 이력 확인이나 안전한 되돌리기가 어렵다.
+
+3) App.jsx와 App.css에 기능이 많이 집중되어 있다.
+   기능이 늘어날수록 수정 충돌과 유지보수 비용이 커질 수 있다.
+
+4) 오늘 목표 목록과 상단 진도율이 서로 다른 데이터 계산 경로를 사용한다.
+
+5) 서버 JSON과 브라우저 localStorage로 저장 위치가 나뉘어 있다.
+   브라우저나 기기를 바꾸면 일부 상태가 공유되지 않는다.
+

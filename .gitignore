@@ -1,0 +1,22 @@
+.env
+backend/.venv/
+backend/data/*.json
+!backend/data/.gitkeep
+__pycache__/
+*.py[cod]
+.pytest_cache/
+frontend/node_modules/
+frontend/dist/
+*.tar.gz
+*.tmp
+
+
+.tls/
+
+# Local editor and operating-system files
+.DS_Store
+.vscode/
+.idea/
+
+# Local packaged copy of this project
+study-rhythm-coach/
